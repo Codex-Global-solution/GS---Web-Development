@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Space - Do Espaço para o Solo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="menu">
+        <a href="#capa" class="logo">Agro <span>Space</span></a>
+        <ul class="links_menu">
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico-alvo">Público</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#usos">Aplicação</a></li>
+            <li><a href="#slideshow">Galeria</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="tema-botoes">
+            <button class="btn-tema tema-claro" onclick="trocarTema('claro')" title="Tema Claro">
+                <i class='bx bx-sun'></i>
+            </button>
+            <button class="btn-tema tema-escuro" onclick="trocarTema('escuro')" title="Tema Escuro">
+                <i class='bx bx-moon'></i>
+            </button>
+            <button class="btn-tema tema-verde" onclick="trocarTema('verde')" title="Tema Verde">
+                <i class='bx bx-leaf'></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="capa">
+        <div class="capa-conteudo">
+            <h1 class="titulo">
+                Do <span class="cor1">Espaço</span> para o solo
+            </h1>
+            <h2 class="subtitulo">
+                Tecnologia Orbital | Agricultura de Precisão
+            </h2>
+            <p class="capa-descricao">
+                Sensores satelitais analisam temperatura, umidade e solo em tempo real.
+                Decisões mais inteligentes, colheitas mais produtivas.
+            </p>
+            <button class="capa-botao"><a href="#problema">Descubra a solução ↓</a></button>
+        </div>
+    </section>
+
+    <section id="problema">
+        <h2 class="problema-titulo">O <span>Problema</span></h2>
+        <div class="problema-layout">
+            <div class="problema-esquerda">
+                <div class="problema-imagens-grid">
+                    <img src="https://img.freepik.com/fotos-premium/um-sector-agricola-em-declinio-devido-aos-efeitos-das-alteracoes-climaticas_10307-20310.jpg" alt="Plantação seca prejudicada pela falta de dados climáticos">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.-5TXERnL7-_Zb2Qrur_s5AHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Estrada rural danificada afetando o escoamento da colheita">
+                </div>
+                <p>
+                    Agricultores perdem safras inteiras por decisões baseadas em achismos e na falta de monitoramento preciso e dados confiáveis no campo.
+                </p>
+                <p>
+                    Isso gera desperdício de recursos e prejuízos financeiros. A solução para proteger sua lavoura está no monitoramento vindo do espaço.
+                </p>
+            </div>
+            
+            <div class="problema-direita-dados">
+                <div class="problema-dados">
+                    <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/20332334-plantar-temperatura-icone-vetor.jpg" alt="imagem: problema no monitoramento de temperatura do solo">
+                    <div class="problema-dados-texto">
+                        <h3>+30%</h3>
+                        <span>das perdas se devem a decisões sem dados de temperatura</span>
+                    </div>
+                </div>
+                <div class="problema-dados">
+                    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/22770103-desperdicio-agua-icone-projeto-gratis-vetor.jpg" alt="imagem: desperdicio no uso de água no campo">
+                    <div class="problema-dados-texto">
+                        <h3>40%</h3>
+                        <span>da água usada na irrigação é desperdiçada por falta de controle</span>
+                    </div>
+                </div>
+                <div class="problema-dados">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.JuJmDNgf7BUjNlf45lfkAwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagem: perda de dinheiro">
+                    <div class="problema-dados-texto">
+                        <h3>R$ 80bi</h3>
+                        <span>em perdas agrícolas anuais só no Brasil por manejo inadequado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia">
+        <h2 class="tecnologia-titulo">Nossa <span>Tecnologia</span></h2>
+        <p class="tecnologia-descricao">
+            Utilizamos dados orbitais e climáticos simulados, combinados com sensores locais e lógica computacional.
+        </p>
+        <p class="tecnologia-descricao">
+            A integração dessas tecnologias permite análises precisas sobre maturidade, clima e condições das estradas.
+        </p>
+        
+        <div class="tecnologia-caixa">
+            <div class="tecnologia-cards">
+                <div class="tecnologia-foto">
+                    <img src="https://img.freepik.com/fotos-premium/satelite-em-orbita-baixa-terrestre-que-facilita-a-internet-mundial-e-a-transmissao-rapida-de-dados-sobre-a-europa_117038-35917.jpg" alt="imagem: Satélite de baixa órbita">
+                </div>
+                <h3>Satélite de Baixa Órbita</h3>
+            </div>
+            <div class="tecnologia-cards">
+                <div class="tecnologia-foto">
+                    <img src="https://www.te.com/content/dam/te-com/images/sensors/global/story-hero-rendition/space-satellite.jpeg/jcr:content/renditions/hero-story.jpg?w=1024" alt="imagem: satélite com sensor de temperatura">
+                </div>
+                <h3>Sensor de Temperatura</h3>
+            </div>
+            <div class="tecnologia-cards">
+                <div class="tecnologia-foto">
+                    <img src="https://archive-share.america.gov/wp-content/uploads/2015/07/smap20150105-16.jpg" alt="imagem:Satélite com sensor de umidade">
+                </div>
+                <h3>Sensor de Umidade</h3>
+            </div>
+            <div class="tecnologia-cards">
+                <div class="tecnologia-foto">
+                    <img src="https://cerradocase.com.br/wp-content/uploads/2022/02/FAZENDA-CONECTADA.jpg" alt="imagem: telemetria em uma fazenda">
+                </div>
+                <h3>Telemetria em Tempo Real</h3>
+            </div>
+            <div class="tecnologia-cards">
+                <div class="tecnologia-foto">
+                    <img src="https://ciudadanospormexico.org/wp-content/uploads/2023/11/ia-pode-revolucionar-mercado-de-trabalho-em-paises-ricos.png" alt="imagem: IA de recomendação">
+                </div>
+                <h3>IA de Recomendação</h3>
+            </div>
+            <div class="tecnologia-cards full-width">
+                <div class="tecnologia-foto">
+                    <img src="https://i.pinimg.com/originals/74/e7/63/74e763e8fba971086df55a82ab3a9cce.jpg" alt="imagem: dashboard em um smartphone">
+                </div>
+                <h3>Dashboard Web/Mobile</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="objetivos">
+        <h2 class="objetivos-titulo">Nossos <span>Objetivos</span></h2>
+        <p class="secao-descricao">
+            Democratizar a tecnologia espacial para o campo brasileiro.
+            Tornar dados satelitais acessíveis a qualquer agricultor.
+        </p>
+        
+        <div class="objetivos-layout">
+            <div class="objetivos-caixa">
+                <div class="objetivos-cards">
+                    <h3>01</h3>
+                    <p><strong>Reduzir Perdas de Colheita</strong>Anticipar riscos climáticos e orientar ações preventivas com dados precisos.</p>
+                </div>
+                <div class="objetivos-cards">
+                    <h3>02</h3>
+                    <p><strong>Otimizar Uso da Água</strong>Irrigação inteligente baseada em umidade real, não em estimativas.</p>
+                </div>
+                <div class="objetivos-cards">
+                    <h3>03</h3>
+                    <p><strong>Aumentar Produtividade</strong>Maximizar a produção por hectare com ciclos de plantio mais eficientes.</p>
+                </div>
+                <div class="objetivos-cards">
+                    <h3>04</h3>
+                    <p><strong>Sustentabilidade no Campo</strong>Reduzir uso de insumos e impacto ambiental com manejo de precisão.</p>
+                </div>
+            </div>
+            
+            <div class="objetivos-imagem-lateral">
+                <img src="https://geoinova.com.br/wp-content/uploads/2023/01/image-6-1-1.png" alt="imagem: satélite sobrevoando plantação">
+            </div>
+        </div>
+    </section>
+
+    <section id="publico-alvo">
+        <h2 class="publico-titulo">Público<span>-Alvo</span></h2>
+        <p class="secao-descricao">
+            A Agro Space serve quem trabalha, pesquisa e financia o campo.
+            Cada perfil se beneficia de uma forma diferente e complementar.
+        </p>
+        
+        <div class="publico-caixa">
+            <div class="publico-cards">
+                <div class="publico-placeholder-img">
+                    <img src="https://www.greenpeace.org/static/planet4-mexico-stateless/2020/05/b066a14c-fondo2_agricultura.jpg" alt="imagem: Agricultores">
+                </div>
+                <h3>Pequenos e Médios Agricultores</h3>
+                <p>Acesso a informação de qualidade sem precisar de equipe técnica especializada.</p>
+                <span class="info">Uso Direto</span>
+            </div>
+            <div class="publico-cards">
+                <div class="publico-placeholder-img">
+                    <img src="https://s2-g1.glbimg.com/pTQH1Mqjq2jk4OlSU4OeQQysnLs=/1200x/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/11595611.jpg" alt="imagem: cooperativa agrícola">
+                </div>
+                <h3>Cooperativas Agrícolas</h3>
+                <p>Impactamos diretamente a comunidade agrícola rural, fortalecendo sua resiliência frente a desafios climáticos.</p>
+                <span class="info">Escala</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <h2 class="beneficios-titulo">Nossos <span>Benefícios</span></h2>
+        <p class="secao-descricao">
+            Mais produção, menos custo, menos impacto.
+            Resultados concretos já nos primeiros ciclos de uso.
+        </p>
+        
+        <div class="beneficios-layout">
+            <div class="beneficios-imagem-lateral">
+                <img src="https://img.freepik.com/fotos-premium/grafico-financeiro-de-cor-verde-mostra-tendencia-ascendente_795881-4534.jpg" alt="imagem: gráfico de aumento de produtividade">
+            </div>
+            
+            <div class="beneficios-caixa">
+                <div class="beneficios-cards">
+                    <h3>1.</h3>
+                    <p><strong>Redução de até 35%</strong> no desperdício de água de irrigação.</p>
+                </div>
+                <div class="beneficios-cards">
+                    <h3>2.</h3>
+                    <p><strong>Aumento de produtividade</strong> com ciclos de colheita mais precisos.</p>
+                </div>
+                <div class="beneficios-cards">
+                    <h3>3.</h3>
+                    <p><strong>Alertas antecipados</strong> de geada, seca e excesso de chuva.</p>
+                </div>
+                <div class="beneficios-cards">
+                    <h3>4.</h3>
+                    <p><strong>Menos insumos</strong> aplicados com rastreamento por zona de solo.</p>
+                </div>
+                <div class="beneficios-cards">
+                    <h3>5.</h3>
+                    <p><strong>Sustentabilidade real</strong> com menor pegada de carbono no campo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="usos">
+        <h2 class="usos-titulo">No <span>Dia a Dia</span></h2>
+        <p class="secao-descricao">
+            Do satélite ao smartphone em minutos.
+            Uma rotina simples que transforma resultados no campo.
+        </p>
+        
+        <div class="usos-caixas">
+            <div class="usos-cards">
+                <span class="usos-etapas">Etapa 01</span>
+                <div class="usos-imagem">
+                    <img src="https://i.ytimg.com/vi/TVd91O80Vow/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCtBA3-MByAByZi0Pc02yyOsV2qCA" alt="imagem:Satélite coletando dados">
+                </div>
+                <h3 class="usos-objeto">Satélite Coleta</h3>
+                <p>Sensores capturam temperatura, umidade e reflectância do solo em cada passagem.</p>
+            </div>
+            <div class="usos-cards">
+                <span class="usos-etapas">Etapa 02</span>
+                <div class="usos-imagem">
+                    <img src="https://storages.com.br/gst/assets/images/18/blog/duvidas-frequentes-47riY.webp" alt="imagem:servidores">
+                </div>
+                <h3 class="usos-objeto">Dados Transmitidos</h3>
+                <p>Informações enviadas a servidores em nuvem via telemetria em tempo real.</p>
+            </div>
+            <div class="usos-cards">
+                <span class="usos-etapas">Etapa 03</span>
+                <div class="usos-imagem">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.z3Aws4_zmNS3vZBO28TgIQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagem: ia processando os dados">
+                </div>
+                <h3 class="usos-objeto">IA Processa</h3>
+                <p>Algoritmos cruzam dados históricos e climáticos e geram recomendações precisas.</p>
+            </div>
+            <div class="usos-cards">
+                <span class="usos-etapas">Etapa 04</span>
+                <div class="usos-imagem">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.E6pEwAAA79rmkqTUI6gh_AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagem:celular recebendo alerta">
+                </div>
+                <h3 class="usos-objeto">Alerta no Celular</h3>
+                <p>Agricultor recebe notificação com a ação ideal: irrigar, colher ou aguardar.</p>
+            </div>
+            <div class="usos-cards">
+                <span class="usos-etapas">Etapa 05</span>
+                <div class="usos-imagem">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.15kwImGv6CUYc9ZBtqeRoQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagem: maquinas agricolas coletando">
+                </div>
+                <h3 class="usos-objeto">Colheita Otimizada</h3>
+                <p>Decisões baseadas em dados garantem produção máxima com mínimo desperdício.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="slideshow">
+        <h2 class="slideshow-titulo">Nossa <span>Galeria</span></h2>
+        <p class="secao-descricao">
+            Veja como a tecnologia espacial transforma a realidade do campo brasileiro.
+        </p>
+
+        <div class="slideshow-container">
+            <div class="slide ativo">
+                <img src="https://aegro.com.br/images/blog/geradas/monitoramento-satelite-chuva-fogo-agricultura.webp" alt="Monitoramento de plantio por imagens de satélite">
+            <div class="slide-legenda">
+                <h3>Monitoramento de Plantio</h3>
+                <p>Imagens de satélite auxiliando no acompanhamento do desenvolvimento das culturas agrícolas.</p>
+            </div>
+        </div>
+        <div class="slide">
+                <img src="https://geoinova.com.br/wp-content/uploads/2023/03/Screenshot_33-2.png" alt="Monitoramento de chuva e focos de calor por satélite">
+            <div class="slide-legenda">
+                <h3>Monitoramento Climático</h3>
+                <p>Dados orbitais permitindo identificar chuvas, secas e focos de incêndio em áreas agrícolas.</p>
+            </div>
+        </div>
+        <div class="slide">
+                <img src="https://aegro.com.br/images/blog/geradas/geotecnologias-agricultura-satelites-fazenda.webp" alt="Geotecnologias aplicadas à agricultura">
+            <div class="slide-legenda">
+                <h3>Geotecnologias no Campo</h3>
+                <p>Satélites e sensoriamento remoto apoiando a gestão eficiente das fazendas.</p>
+            </div>
+        </div>
+
+            <button class="slide-btn anterior" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="slide-btn proximo" onclick="mudarSlide(1)">&#10095;</button>
+
+            <div class="slide-indicadores">
+                <span class="indicador ativo" onclick="irParaSlide(0)"></span>
+                <span class="indicador" onclick="irParaSlide(1)"></span>
+                <span class="indicador" onclick="irParaSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2 class="quiz-titulo">Quiz <span>Agro Space</span></h2>
+        <p class="secao-descricao">
+            Teste seus conhecimentos sobre tecnologia espacial e agricultura de precisão!
+        </p>
+
+        <div class="quiz-container">
+            <div id="quiz-pergunta-area">
+                <p id="quiz-numero-pergunta" class="quiz-numero">Pergunta 1 de 10</p>
+                <h3 id="quiz-texto-pergunta" class="quiz-pergunta-texto">Carregando...</h3>
+
+                <div id="quiz-alternativas" class="quiz-alternativas-container">
+                </div>
+                <button id="quiz-btn-proximo" class="quiz-btn" onclick="proximaPergunta()" style="display: none;">
+                    Próxima Pergunta >
+                </button>
+            </div>
+
+            <div id="quiz-resultado" class="quiz-resultado" style="display: none;">
+                <h3> Quiz Finalizado!</h3>
+                <p id="quiz-pontuacao" class="quiz-pontuacao-texto"></p>
+                <p id="quiz-mensagem" class="quiz-mensagem-texto"></p>
+                <button class="quiz-btn" onclick="reiniciarQuiz()"> Jogar Novamente</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 class="contato-titulo">Entre em <span>Contato</span></h2>
+        <p class="secao-descricao">
+            Quer saber mais sobre o Agro Space? Preencha o formulário abaixo e entraremos em contato.
+        </p>
+
+        <div class="contato-container">
+            <div class="contato-formulario">
+                <div class="campo-grupo">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    <span class="erro-mensagem" id="erro-nome"></span>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                    <span class="erro-mensagem" id="erro-email"></span>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="(11) 99999-9999">
+                    <span class="erro-mensagem" id="erro-telefone"></span>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="assunto">Assunto *</label>
+                    <select id="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option value="demonstracao">Solicitar Demonstração</option>
+                        <option value="parceria">Proposta de Parceria</option>
+                        <option value="duvida">Dúvidas sobre o Produto</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <span class="erro-mensagem" id="erro-assunto"></span>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
+                    <span class="erro-mensagem" id="erro-mensagem"></span>
+                </div>
+
+                <div id="formulario-sucesso" class="sucesso-mensagem" style="display: none;">
+                     Mensagem enviada com sucesso! Em breve entraremos em contato.
+                </div>
+                <button class="contato-btn" onclick="validarFormulario()">Enviar Mensagem </button>
+            </div>
+
+            <div class="contato-info">
+                <div class="info-item">
+                    <span class="info-icone"></span>
+                    <div>
+                        <h4>Localização</h4>
+                        <p>São Paulo, SP - Brasil</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icone"></span>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>contato@agrospace.com.br</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icone"></span>
+                    <div>
+                        <h4>Projeto</h4>
+                        <p>FIAP - Front-End Design</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icone"></span>
+                    <div>
+                        <h4>Equipe Codex</h4>
+                        <p>Isaac · João Lucca · Murillo · Thalles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-interno">
+            <div class="rodape-topo">
+                <div class="rodape-marca">
+                    <a href="#capa" class="navegacao-logo">Agro <span>Space</span></a>
+                    <p>Tecnologia espacial a serviço da agricultura brasileira. Do solo ao satélite.</p>
+                </div>
+
+                <nav class="rodape-navegacao">
+                    <h4>Navegação</h4>
+                    <a href="#problema">Problema</a>
+                    <a href="#tecnologia">Tecnologia</a>
+                    <a href="#objetivos">Objetivos</a>
+                    <a href="#publico-alvo">Público-Alvo</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#usos">Aplicação</a>
+                    <a href="#slideshow">Galeria</a>
+                    <a href="#quiz">Quiz</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+
+            <div class="rodape-divisor"></div>
+
+            <div class="rodape-baixo">
+                <div class="rodape-equipe">
+                    <h4>Equipe do Projeto (Codex)</h4>
+                    <div class="membro-equipe">
+                        <span class="nome-membro">Isaac Pongelli Ambrozevicius</span>
+                        <span class="rm-membro">RM: 569166</span>
+                    </div>
+                    <div class="membro-equipe">
+                        <span class="nome-membro">João Lucca Marenov Santos</span>
+                        <span class="rm-membro">RM: 569562</span>
+                    </div>
+                    <div class="membro-equipe">
+                        <span class="nome-membro">Murillo Marim Farias</span>
+                        <span class="rm-membro">RM: 569045</span>
+                    </div>
+                    <div class="membro-equipe">
+                        <span class="nome-membro">Thalles Almeida Angelini</span>
+                        <span class="rm-membro">RM: 569925</span>
+                    </div>
+                </div>
+
+                <div class="rodape-direitos">
+                    <p>© 2026 <span>Agro Space</span>. Todos os direitos reservados.</p>
+                    <p>Front-End Design · FIAP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
