@@ -75,3 +75,17 @@ function validarFormulario() {
         mostrarSucesso();
     }
 }
+function mostrarErro(campoId, mensagemErro) {
+    var campo = document.getElementById(campoId);
+    var erroElemento = document.getElementById('erro-' + campoId);
+    campo.classList.add('campo-erro');
+    erroElemento.textContent = mensagemErro;
+    erroElemento.classList.add('visivel');
+}
+function removerErro(campoId) {
+    var campo = document.getElementById(campoId);
+    var erroElemento = document.getElementById('erro-' + campoId);
+    campo.classList.remove('campo-erro');
+    erroElemento.textContent = '';
+    erroElemento.classList.remove('visivel');
+}
