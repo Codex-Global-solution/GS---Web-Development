@@ -75,3 +75,30 @@ function validarFormulario() {
         mostrarSucesso();
     }
 }
+function mostrarErro(campoId, mensagemErro) {
+    var campo = document.getElementById(campoId);
+    var erroElemento = document.getElementById('erro-' + campoId);
+    campo.classList.add('campo-erro');
+    erroElemento.textContent = mensagemErro;
+    erroElemento.classList.add('visivel');
+}
+function removerErro(campoId) {
+    var campo = document.getElementById(campoId);
+    var erroElemento = document.getElementById('erro-' + campoId);
+    campo.classList.remove('campo-erro');
+    erroElemento.textContent = '';
+    erroElemento.classList.remove('visivel');
+}
+function mostrarSucesso() {
+    var sucesso = document.getElementById('formulario-sucesso');
+    sucesso.style.display = 'block';
+
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('telefone').value = '';
+    document.getElementById('assunto').value = '';
+    document.getElementById('mensagem').value = '';
+    setTimeout(function() {
+        sucesso.style.display = 'none';
+    }, 4000);
+}
