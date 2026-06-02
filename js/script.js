@@ -102,3 +102,79 @@ function mostrarSucesso() {
         sucesso.style.display = 'none';
     }, 4000);
 }
+
+var perguntas = [
+    {
+        texto: "pergunta1",
+        alternativas: [
+            
+        ],
+        correta: 1
+    },
+    {
+        texto: "pergunta2",
+        alternativas: [
+            
+        ],
+        correta: 2
+    },
+    {
+        texto: "pergunta 3",
+        alternativas: [
+            
+        ],
+        correta: 2
+    },
+    {
+        texto: "pergunta 4",
+        alternativas: [
+           
+        ],
+        correta: 1
+    },
+    {
+        texto: "pergunta 5",
+        alternativas: [
+            
+        ],
+        correta: 2
+    },
+    {
+        texto: "pergunta 6",
+        alternativas: [
+            
+        ],
+        correta: 1
+    },
+    {
+        texto: "pergunta 7",
+        alternativas: [
+            
+        ],
+        correta: 2
+    },
+    {
+        texto: "pertgunta 8",
+        alternativas: [
+            
+        ],
+        correta: 1
+    },
+    {
+        texto: "pergunta 9",
+        alternativas: [
+            
+        ],
+        correta: 1
+    },
+    {
+        texto: "pergunta10",
+        alternativas: [
+            
+        ],
+        correta: 2
+    }
+];
+var perguntaAtual = 0;   
+var pontuacao = 0;       
+var respondeu = false;   
