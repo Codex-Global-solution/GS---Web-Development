@@ -89,3 +89,16 @@ function removerErro(campoId) {
     erroElemento.textContent = '';
     erroElemento.classList.remove('visivel');
 }
+function mostrarSucesso() {
+    var sucesso = document.getElementById('formulario-sucesso');
+    sucesso.style.display = 'block';
+
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('telefone').value = '';
+    document.getElementById('assunto').value = '';
+    document.getElementById('mensagem').value = '';
+    setTimeout(function() {
+        sucesso.style.display = 'none';
+    }, 4000);
+}
