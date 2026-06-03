@@ -294,3 +294,24 @@ function mostrarResultado() {
 function reiniciarQuiz() {
     carregarQuiz();
 }
+
+
+function trocarTema(nomeTema) {
+    document.body.classList.remove('tema-claro', 'tema-escuro', 'tema-verde');
+
+    if (nomeTema !== 'escuro') {
+        document.body.classList.add('tema-' + nomeTema);
+    }
+    localStorage.setItem('temaSelecionado', nomeTema);
+}
+function carregarTemaSalvo() {
+    var temaSalvo = localStorage.getItem('temaSelecionado');
+    if (temaSalvo) {
+        trocarTema(temaSalvo);
+    }
+}
+window.onload = function() {
+    carregarTemaSalvo();
+    iniciarSlideshow();
+    carregarQuiz();
+};
