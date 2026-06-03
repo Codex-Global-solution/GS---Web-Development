@@ -208,3 +208,110 @@ var perguntas = [
 var perguntaAtual = 0;   
 var pontuacao = 0;       
 var respondeu = false;   
+
+function carregarQuiz() {
+    perguntaAtual = 0;
+    pontuacao = 0;
+    respondeu = false;
+
+    document.getElementById('quiz-pergunta-area').style.display = 'block';
+    document.getElementById('quiz-resultado').style.display = 'none';
+    mostrarPergunta();
+}
+function mostrarPergunta() {
+    var pergunta = perguntas[perguntaAtual];
+
+    document.getElementById('quiz-numero-pergunta').textContent =
+        'Pergunta ' + (perguntaAtual + 1) + ' de ' + perguntas.length;
+    document.getElementById('quiz-texto-pergunta').textContent = pergunta.texto;
+    var container = document.getElementById('quiz-alternativas');
+    container.innerHTML = '';
+    for (var i = 0; i < pergunta.alternativas.length; i++) {
+        var btn = document.createElement('button');
+        btn.className = 'alternativa-btn';
+        btn.textContent = pergunta.alternativas[i];
+        btn.onclick = (function(indice) {
+            return function() {
+                verificarResposta(indice);
+            };
+        })(i);
+        container.appendChild(btn);
+    }
+    document.getElementById('quiz-btn-proximo').style.display = 'none';
+    respondeu = false;
+}
+function verificarResposta(indiceEscolhido) {
+    if (respondeu) return;
+    respondeu = true;
+    var pergunta = perguntas[perguntaAtual];
+    var botoes = document.querySelectorAll('.alternativa-btn');
+    if (indiceEscolhido === pergunta.correta) {
+        botoes[indiceEscolhido].classList.add('correta');
+        pontuacao++;
+    } else {
+        botoes[indiceEscolhido].classList.add('errada');
+        botoes[pergunta.correta].classList.add('correta');
+    }
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].disabled = true;
+    }
+    var btnProximo = document.getElementById('quiz-btn-proximo');
+    btnProximo.style.display = 'block';
+
+    if (perguntaAtual === perguntas.length - 1) {
+        btnProximo.textContent = 'Ver Resultado ';
+    } else {
+        btnProximo.textContent = 'Próxima Pergunta >';
+    }
+}
+function proximaPergunta() {
+    perguntaAtual++;
+    if (perguntaAtual < perguntas.length) {
+        mostrarPergunta();
+    } else {
+        mostrarResultado();
+    }
+}
+function mostrarResultado() {
+    document.getElementById('quiz-pergunta-area').style.display = 'none';
+    document.getElementById('quiz-resultado').style.display = 'block';
+    var percentual = Math.round((pontuacao / perguntas.length) * 100);
+    document.getElementById('quiz-pontuacao').textContent =
+        'Você acertou ' + pontuacao + ' de ' + perguntas.length + ' perguntas (' + percentual + '%)';
+    var mensagem = '';
+    if (pontuacao === perguntas.length) {
+        mensagem = ' Parabéns! Você é um expert em Agro Space! Nota máxima!';
+    } else if (pontuacao >= 7) {
+        mensagem = ' Muito bem! Você conhece bastante sobre tecnologia agrícola!';
+    } else if (pontuacao >= 5) {
+        mensagem = ' Bom resultado! Que tal explorar mais o nosso projeto?';
+    } else {
+        mensagem = ' Continue estudando! Releia o projeto para aprender mais.';
+    }
+
+    document.getElementById('quiz-mensagem').textContent = mensagem;
+}
+function reiniciarQuiz() {
+    carregarQuiz();
+}
+
+
+function trocarTema(nomeTema) {
+    document.body.classList.remove('tema-claro', 'tema-escuro', 'tema-verde');
+
+    if (nomeTema !== 'escuro') {
+        document.body.classList.add('tema-' + nomeTema);
+    }
+    localStorage.setItem('temaSelecionado', nomeTema);
+}
+function carregarTemaSalvo() {
+    var temaSalvo = localStorage.getItem('temaSelecionado');
+    if (temaSalvo) {
+        trocarTema(temaSalvo);
+    }
+}
+window.onload = function() {
+    carregarTemaSalvo();
+    iniciarSlideshow();
+    carregarQuiz();
+};
